@@ -6,15 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <style> body {padding-top: 30px; } </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./lib/main.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Sweather!</h1>
+  <script type="text/javascript" src="./lib/index.js"></script>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-center">
+      <h1> <ul id="title-1" class="nav navbar-nav navbar-center">Sweather! </ul> <ul id="title-2" class="nav navbar-nav navbar-center">a weather app</ul></h1>
+    </div>
+  </nav>
+  <div class="jumbotron">
+  	<div class="container">
+      <input type="text" onchange="handleChange(this);" id="newLocation" class="light" placeholder="Enter new location">
+  		<a class="btn btn-primary btn-sm" role="button" onclick="newLocation()" >Get Location Weather</a> <button type"button" id="clearBtn" class="btn btn-primary btn-sm" role="button" onclick="aClear()">Clear</button>
+      <h3 class="light" id="currentLocation"></h3>
+      <br>
+  	</div>
+  </div>
+   <div class="container-fluid">
+    <div class="row favorites">
+      <h3>This will be where favorites are listed. <button type="button" class="btn btn-dark" id="deleteBtn" onclick="delFavorite()" >Delete</button> </h3>
+    </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="main.bundle.js"></script>
 </body>
 </html>
