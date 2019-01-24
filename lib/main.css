@@ -1,6 +1,11 @@
 body {
   text-align: center;
-  font-family: 'Open Sans';
+  /* font-family: 'Open Sans'; */
+  font-size: large;
+}
+
+.navbar {
+    margin-bottom: 0px;
 }
 
 .navbar-center {
@@ -9,9 +14,9 @@ body {
     float: none;
 }
 
-.jumbotron { margin-top: 5;
-             margin-bottom: 5;
-             padding:0 0 0 0;
+.jumbotron { margin-top: 1px;
+             margin-bottom: 1px;
+             padding:0px 0px 0px 0px;
 }
 
 #title-1 {
@@ -22,6 +27,14 @@ body {
 #title-2 {
     color: #E6E7E8;
     font-weight: 300;
+}
+
+#currentGif {
+  height: 100%;
+}
+.padding-0{
+    padding-right:0;
+    padding-left:0;
 }
 
 .btn-dark {
@@ -36,7 +49,7 @@ body {
   font-weight: 300;
 }
 
-.bigpink {
-  color: #EB008B;
+.bigorange {
+  color: orange;
   font-weight: 700;
 }

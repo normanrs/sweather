@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <title>Sweather!</title>
+    <title>SWEATHER!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -19,11 +19,32 @@
   </nav>
   <div class="jumbotron">
   	<div class="container">
-      <input type="text" onchange="handleChange(this);" id="newLocation" class="light" placeholder="Enter new location">
+      <input type="text" onchange="handleChange(this);" id="newLocation" class="light" placeholder="Default: Denver,CO">
   		<a class="btn btn-primary btn-sm" role="button" onclick="getLocation()" >Submit</a> <button type"button" id="clearBtn" class="btn btn-primary btn-sm" role="button" onclick="aClear()">Clear</button>
-      <h5 class="light" id="currentLocation"></h5>
-      <div class="light" id="currentTemp"></div>
-      <br>
+      </br><span id="currentLocation"></span><span class="light" id="dateAndTime"></span>
+      <div class="container">
+      	<div class="row">
+      		<div class="col-md-2">
+      		</div>
+      		<div class="col-md-2">
+            <h2 class="bigorange" id="currentTemp"></h2>
+            <span id="highLow"></span>
+          </br><span id="feelsLike"></span>
+      		</div>
+      		<div class="col-md-4 padding-0">
+            </br><span id="humidity"></span>
+            <span id="uvIndex"></span>
+            <span id="visibility"></span></br>
+            <span id="dailySummary"></span></br>
+            <span id="hourlySummary"></span>
+      		</div>
+          <div class="col-md-2">
+          <iframe id="currentGif" width="auto" frameBorder="0" class="giphy-embed" ></iframe>
+          </div>
+          <div class="col-md-2">
+          </div>
+      	</div>
+      </div>
   	</div>
   </div>
    <div class="container-fluid">
