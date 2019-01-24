@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  font-family: 'Open Sans';
+}
+
+.navbar-center {
+    text-align: center;
+    display:inline-block;
+    float: none;
+}
+
+.jumbotron { margin-top: 5;
+             margin-bottom: 5;
+             padding:0 0 0 0;
+}
+
+#title-1 {
+    color: green;
+    font-weight: 700;
+}
+
+#title-2 {
+    color: #E6E7E8;
+    font-weight: 300;
+}
+
+.btn-dark {
+  background: #929497;
+  color: white;
+  border-radius: 40px;
+  width: 100px;
+
+}
+
+.light {
+  font-weight: 300;
+}
+
+.bigpink {
+  color: #EB008B;
+  font-weight: 700;
+}

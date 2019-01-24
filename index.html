@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <title>Sweather!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./lib/main.css">
+</head>
+<body>
+  <script type="text/javascript" src="./lib/index.js"></script>
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar-center">
+      <h1> <ul id="title-1" class="nav navbar-nav navbar-center">Sweather! </ul> <ul id="title-2" class="nav navbar-nav navbar-center">a weather app</ul></h1>
+    </div>
+  </nav>
+  <div class="jumbotron">
+  	<div class="container">
+      <input type="text" onchange="handleChange(this);" id="newLocation" class="light" placeholder="Enter new location">
+  		<a class="btn btn-primary btn-sm" role="button" onclick="getLocation()" >Submit</a> <button type"button" id="clearBtn" class="btn btn-primary btn-sm" role="button" onclick="aClear()">Clear</button>
+      <h5 class="light" id="currentLocation"></h5>
+      <div class="light" id="currentTemp"></div>
+      <br>
+  	</div>
+  </div>
+   <div class="container-fluid">
+    <div class="row favorites">
+      <h3>This will be where favorites are listed. <button type="button" class="btn btn-dark" id="deleteBtn" onclick="delFavorite()" >Delete</button> </h3>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
