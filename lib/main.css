@@ -6,36 +6,37 @@ body {
 }
 
 .navbar {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .navbar-center {
-    text-align: center;
-    display:inline-block;
-    float: none;
+  text-align: center;
+  display:inline-block;
+  float: none;
 }
 
-.jumbotron { margin-top: 1px;
-             margin-bottom: 1px;
-             padding:0px 0px 0px 0px;
+.jumbotron {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding:0px 0px 0px 0px;
 }
 
 #title-1 {
-    color: green;
-    font-weight: 700;
+  color: green;
+  font-weight: 700;
 }
 
 #title-2 {
-    color: #E6E7E8;
-    font-weight: 300;
+  color: #E6E7E8;
+  font-weight: 300;
 }
 
 #currentGif {
   height: 100%;
 }
 .padding-0{
-    padding-right:0;
-    padding-left:0;
+  padding-right:0;
+  padding-left:0;
 }
 
 .btn-dark {
@@ -56,14 +57,20 @@ body {
   font-size: 200%;
 }
 
-hr {
+.divider-hide {
+  display: none !important;
+}
+
+.divider-show {
+  display: block !important;
+  flex-grow: 1;
   width: 65%;
   height: 2px;
   margin-left: auto;
   margin-right: auto;
-  /* background-color:#666; */
-  border: 0 none;
   margin-top: 0px;
   margin-bottom:0px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  text-align: inherit;
+  font-family: inherit;
 }
