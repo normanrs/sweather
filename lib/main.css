@@ -74,3 +74,8 @@ body {
   text-align: inherit;
   font-family: inherit;
 }
+
+.left {
+  text-align: left;
+  font-family: 'Open Sans';
+}
