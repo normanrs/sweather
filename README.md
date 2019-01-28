@@ -1,62 +1,50 @@
-# 📱 Project/App Title
-> Subtitle here
+# 📱 Sweather!
+> A Weather App
 
-Introdution/Description of what the program does.
+Sweather gets the current weather for a US city.
 
 ## ⚙️ Initial Setup
 
 OS X & Linux:
 
 ```sh
-bundle
-rails s (to spin up the server)
+npm install
 ```
 
 ## 🕹 How to Use
 
-Describe the app's features
+USER INPUT
+Users can enter a city/state. Accommodates any mix of CAPITAL and lowercase letters. States can be spelled out or in two-letter abbreviation.
+Displays an error with instructions on bad input.
 
-FEATURE
-stuff it needs
-stuff it does
+CURRENT WEATHER AND FORECAST
+Site returns current weather conditions with a sign-language gif. Also displays an hourly forecast for the next eight hours, and a daily forecast for the next five days.
 
-FEATURE
-stuff it needs
-stuff it does
-
-FEATURE
-stuff it needs
-stuff it does
+API CALL
+All data is returned from the Sweater Weather API at https://stormy-depths-85632.herokuapp.com .
 
 ## 🚧 Known Issues
 
-Describe the app's known limitations/problems
+UNKNOWN CITY or STATE
+If the user enters an incorrect city or state, the site does not show anything. Dev tools reveals a 500 error behind the scenes. I intend to add a lookup for all US cities/towns and states (added to issues).
 
-FEATURE
-stuff it needs
-stuff it does
-
-FEATURE
-stuff it needs
-stuff it does
-
-FEATURE
-stuff it needs
-stuff it does
+(Sometimes) SLOW API CALL
+The Sweater Weather API is sometimes slow. This is probably because it is hosted as a free site on Heroku. I intend to find other hosting.
 
 ## 📊 How to Run Tests
 
 OS X & Linux:
 
 ```sh
-rspec (to run tests)
+Open the fetch_test.html document in the 'test' directory. (BETA)
 ```
 
 ## 🏗 Tech Stack List
 
-* Ruby v 2.5
 * JavaScript
 * HTML/CSS
+* NPM
+* Mocha
 
 ## 📥 How To Contribute
 
