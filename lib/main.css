@@ -32,7 +32,8 @@ body {
 }
 
 #currentGif {
-  height: 80%;
+  height: 90px;
+  width: auto;
 }
 .padding-0{
   padding-right:0;
