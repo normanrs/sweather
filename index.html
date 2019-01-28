@@ -10,12 +10,13 @@
     <link rel="stylesheet" type="text/css" href="./lib/main.css">
 </head>
 <body>
-  <script type="text/javascript" src="./lib/index.js"></script>
   <nav class="navbar navbar-inverse navbar-static-top">
     <div class="navbar-center">
-      <h1> <ul id="title-1" class="nav navbar-nav navbar-center">Sweather! </ul> <ul id="title-2" class="nav navbar-nav navbar-center">[a weather app]</ul></h1>
-      <input type="text" pattern="[a-zA-Z,]*" id="newLocation" class="light" placeholder="enter: city,state" >
-      <a class="btn btn-primary btn-sm" role="button" onclick="getLocation()" >Submit</a> <button type"button" id="clearBtn" class="btn btn-primary btn-sm" role="button" onclick="aClear()">Clear</button> <button type="button" class="btn btn-primary btn-sm" id="showfavBtn" onclick="showFavorites()" >Show Site Favorites</button>
+      <h1> <span id="title-1" class="nav navbar-nav navbar-center">Sweather! </span> <span id="title-2" class="nav navbar-nav navbar-center">[a weather app]</span></h1>
+      <span><input type="text" pattern="[a-zA-Z,]*" id="newLocation" class="light" placeholder="city,state" >
+      <a class="btn btn-primary btn-sm" role="button" title="Defaults to current location" onclick="getLocation()" >Submit</a>
+      <button type"button" id="clearBtn" class="btn btn-primary btn-sm" role="button" title="Clear entry and revert to default" onclick="aClear()">Clear</button>
+      <button type="button" class="btn btn-primary btn-sm" id="showfavBtn" role="button" title="Favorites will be displayed at the bottom of the page" onclick="showFavorites()" >Show Site Favorites</button></span>
     </div>
   </nav>
   <div class="jumbotron">
@@ -38,7 +39,7 @@
             <span id="hourlySummary"></span>
       		</div>
           <div class="col-md-2">
-          <iframe id="currentGif" width="auto" frameBorder="0" class="giphy-embed" ></iframe>
+          <iframe id="currentGif" frameBorder="0" class="giphy-embed" ></iframe>
           </div>
           <div class="col-md-2">
           </div>
@@ -145,5 +146,6 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./lib/index.js"></script>
 </body>
 </html>
