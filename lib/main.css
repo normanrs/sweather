@@ -49,11 +49,17 @@ body {
   font-size: 200%;
 }
 
-.divider-hide {
+.forecast-hide {
   display: none !important;
 }
 
 .divider-show {
+  display: block !important;
+  text-align: inherit;
+  font-family: inherit;
+}
+
+.divider {
   display: block !important;
   flex-grow: 1;
   width: 65%;
